@@ -1,0 +1,9 @@
+# Dépendances minimales pour le projet
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+joblib
+flask
