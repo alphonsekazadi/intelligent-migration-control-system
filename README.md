@@ -1,67 +1,55 @@
-# Projet_3 — Analyse des données migratoires et modèle de risque
+# Intelligent Migration Control System (IMCS)
 
 Description
 -----------
-Ce dépôt contient un petit projet d'analyse des données migratoires et d'entraînement d'un modèle de risque (classification/régression selon les notebooks). Le projet inclut des notebooks exploratoires, un script d'application minimal (`app.py`) et les données brutes.
+Intelligent Migration Control System (IMCS) is a small project for exploring migration data and building a risk model. It includes Jupyter notebooks for analysis, a minimal app (`app.py`), and the raw dataset.
 
-Contenu principal
------------------
-- `donnees_migratoires_mbujimayi.csv` : jeu de données principal (données migratoires pour Mbuji-Mayi).
-- `modele_risque.ipynb` et `modele_risque-Copy1.ipynb` : notebooks Jupyter montrant l'analyse, le pré-traitement et l'entraînement du/des modèles.
-- `app.py` : script d'application minimal (ex. API ou démonstration). Vérifiez le contenu avant d'exposer en production.
+Quick overview
+--------------
+- `donnees_migratoires_mbujimayi.csv` — primary dataset.
+- `modele_risque.ipynb`, `modele_risque-Copy1.ipynb` — analysis & modeling notebooks.
+- `app.py` — simple entry point (demo/API).
 
-Objectifs
----------
-- Nettoyer et explorer les données migratoires.
-- Construire et évaluer un modèle de risque (classification ou régression selon l'objectif des notebooks).
-- Fournir un point d'entrée simple (`app.py`) pour tester le modèle ou exposer une API.
+Requirements
+------------
+Install project dependencies from `requirements.txt`.
 
-Installation (environnement Python)
-----------------------------------
-1. Créez et activez un environnement virtuel (PowerShell) :
+Quick start (PowerShell)
+------------------------
+Create and activate a virtual environment, then install dependencies:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```
-
-2. Installez les dépendances :
-
-```powershell
 pip install -r requirements.txt
 ```
 
-Utilisation rapide
-------------------
-- Pour lancer les notebooks :
+Run notebooks:
 
 ```powershell
 jupyter notebook
 ```
 
-- Pour exécuter le script d'application localement :
+Run the app (local demo):
 
 ```powershell
 python app.py
 ```
 
-Notes importantes
------------------
-- Les notebooks contiennent l'ordre des opérations : exploration, pré-traitement, sélection de caractéristiques, entraînement et évaluation.
-- Avant de publier `app.py` en production, vérifiez la gestion des secrets, l'entrée/sortie et effectuez des tests de charge.
-- Si vos données sont volumineuses ou sensibles, ne les commitez pas dans le dépôt public ; utilisez un stockage sécurisé.
+Notes
+-----
+- Check `app.py` before exposing it to production (secrets, input validation, logging).
+- Do not commit sensitive or large data. Add datasets to `.gitignore` if needed.
 
-Contribuer
-----------
-1. Forkez le dépôt.
-2. Créez une branche de travail : `feature/ma-fonctionnalite`.
-3. Ouvrez une pull request décrivant les changements.
+Contributing
+------------
+- Fork, create a branch, implement changes, and open a pull request.
 
-Licence
+License
 -------
-Ajoutez ici la licence souhaitée (par ex. MIT) ou contactez l'auteur si vous n'êtes pas sûr.
+MIT
 
 Contact
 -------
-Pour toute question ou suggestion, contactez l'auteur du projet.
+For questions or contributions, contact me : [Alphonse Kazadi](mailto:alphonsekazadi01@gmail.com).
 
